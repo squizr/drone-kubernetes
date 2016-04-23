@@ -1,0 +1,63 @@
+{
+  "repo": {
+    "clone_url": "git://github.com/drone/drone",
+    "owner": "drone",
+    "name": "drone",
+    "full_name": "drone/drone"
+  },
+  "system": {
+    "link_url": "https://beta.drone.io"
+  },
+  "build": {
+    "number": 22,
+    "status": "success",
+    "started_at": 1421029603,
+    "finished_at": 1421029813,
+    "message": "Update the Readme",
+    "author": "johnsmith",
+    "author_email": "john.smith@gmail.com",
+    "event": "push",
+    "branch": "master",
+    "commit": "436b7a6e2abaddfd35740527353e78a227ddcb2c",
+    "ref": "refs/heads/master"
+  },
+  "workspace": {
+    "root": "/drone/src",
+    "path": "/drone/src/github.com/drone/drone"
+  },
+  "vargs": {
+    "deployment": {
+      "kind": "Deployment",
+      "spec": {
+        "template": {
+          "spec": {
+            "containers": [
+              {
+                "image": "nginx:1.9.1",
+                "name": "nginx",
+                "ports": [
+                  {
+                    "containerPort": 80
+                  }
+                ]
+              }
+            ]
+          },
+          "metadata": {
+            "labels": {
+              "app": "nginx"
+            }
+          }
+        },
+        "replicas": 1
+      },
+      "apiVersion": "extensions/v1beta1",
+      "metadata": {
+        "name": "nginx-deployment"
+      }
+    },
+    "cluster": "",
+    "username": "",
+    "password": ""
+  }
+}
