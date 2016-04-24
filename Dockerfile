@@ -1,6 +1,6 @@
-# Docker image for the Drone BitBalloon plugin
+# Docker image for the Drone Kubernetes plugin
 #
-#     cd $GOPATH/src/github.com/drone-plugins/drone-kubernetes
+#     cd $GOPATH/src/github.com/squizr/drone-kubernetes
 #     make deps build docker
 
 FROM scratch
