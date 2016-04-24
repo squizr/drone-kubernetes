@@ -42,6 +42,10 @@ deploy:
     cat test-payload.json | docker run -i plugins/drone-kubernetes
 ```
 
+## TODO
+* [ ] Change Auth to service accounts
+* [ ] Write tests
+
 ## Docker
 
 Build the container using `make`:
