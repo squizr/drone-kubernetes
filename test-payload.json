@@ -56,8 +56,8 @@
         "name": "nginx-deployment"
       }
     },
-    "cluster": "",
-    "username": "",
-    "password": ""
+    "cluster": "google.com",
+    "username": "b",
+    "password": "c"
   }
 }

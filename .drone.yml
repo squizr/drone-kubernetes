@@ -1,0 +1,7 @@
+plugin:
+  name: Kubernetes
+  desc: Deploy or update a project on Kubernetes
+  type: deploy
+  image: squizr/drone-kubernetes
+  labels:
+    - kubernetes

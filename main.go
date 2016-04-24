@@ -74,7 +74,7 @@ func main() {
 		if err != nil {
 			log.Fatalln("Can't create deployment: ", err)
 		} else {
-			log.Println("Updating Created: ", ndeploytment.ObjectMeta.Name)
+			log.Println("Deployment Created: ", ndeploytment.ObjectMeta.Name)
 		}
 	} else {
 		log.Println("Deployment Found: ", deploytment.ObjectMeta.Name)

@@ -1,7 +1,7 @@
 .PHONY: all clean deps fmt vet test docker
-GO15VENDOREXPERIMENT=1 
+GO15VENDOREXPERIMENT=1
 EXECUTABLE ?= drone-kubernetes
-IMAGE ?= plugins/$(EXECUTABLE)
+IMAGE ?= squizr/$(EXECUTABLE)
 COMMIT ?= $(shell git rev-parse --short HEAD)
 
 LDFLAGS = -X "main.buildCommit=$(COMMIT)"
