@@ -43,7 +43,7 @@ deploy:
 ```
 
 ## TODO
-* [ ] Change Auth to service accounts
+* [x] Change Auth to service accounts
 * [ ] Write tests
 
 ## Docker
