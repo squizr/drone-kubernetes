@@ -3,9 +3,17 @@
 Use this plugin for deploying an application to Kubernetes. You can override the
 default configuration with the following parameters:
 
-* `master` - kubernetes host to deploy to
+* `cluster` - kubernetes host to deploy to
 * `token` - kubernetes access token
-* `deployment` - Deployment file
+* `deployment` - Deployment Spec
+
+## Service Account
+
+Please refer to the [Kubernetes docs](http://kubernetes.io/docs/admin/service-accounts-admin/) for details on how to create a service account
+
+## Security
+
+Please do not put your token in source control use the `.drone.sec` file and reference it
 
 ## Example
 
@@ -13,8 +21,7 @@ default configuration with the following parameters:
 deploy:
   kubernetes:
     cluster: https://107.978.211.57
-    username: admin
-    password: hjkhjkhkjlh
+    token: vwervewferwfewr.ewrfewrewf.werfewfewrfew
     deployment:
       kind: "Deployment"
       spec:

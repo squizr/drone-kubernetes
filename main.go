@@ -37,27 +37,22 @@ func main() {
 		return
 	}
 
-	if len(vargs.Username) == 0 {
-		fmt.Println("Please provide a Username")
+	if len(vargs.Token) == 0 {
+		fmt.Println("Please provide a Token")
 		os.Exit(1)
 		return
 	}
-	if len(vargs.Password) == 0 {
-		fmt.Println("Please provide a Password")
-		os.Exit(1)
-		return
-	}
+
 	if len(vargs.Deployment.ObjectMeta.Name) == 0 {
-		fmt.Println("Please provide a Deployment Name")
+		fmt.Println("Please provide a Valid Deployment")
 		os.Exit(1)
 		return
 	}
 
 	config := &restclient.Config{
-		Insecure: true,
-		Host:     vargs.Cluster,
-		Username: vargs.Username,
-		Password: vargs.Password,
+		Insecure:    true,
+		Host:        vargs.Cluster,
+		BearerToken: vargs.Token,
 	}
 
 	client, err := client.New(config)

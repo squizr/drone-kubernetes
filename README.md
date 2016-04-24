@@ -15,8 +15,8 @@ make deps build
 deploy:
   kubernetes:
     cluster: https://107.978.211.57
-    username: admin
-    password: hjkhjkhkjlh
+    token: $$TOKEN
+    token:
     deployment:
       kind: "Deployment"
       spec:
@@ -39,7 +39,7 @@ deploy:
 
 ```
 ```sh
-    cat test-payload.json | docker run -i plugins/drone-kubernetes
+    cat test-payload.json | docker run -i squizr/drone-kubernetes
 ```
 
 ## TODO
