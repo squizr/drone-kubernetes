@@ -21,7 +21,8 @@ Please do not put your token in source control use the `.drone.sec` file and ref
 deploy:
   kubernetes:
     cluster: https://107.978.211.57
-    token: vwervewferwfewr.ewrfewrewf.werfewfewrfew
+    token: $$TOKEN
+    image: squizr/drone-kubernetes
     deployment:
       kind: "Deployment"
       spec:
@@ -41,5 +42,6 @@ deploy:
       apiVersion: "extensions/v1beta1"
       metadata:
       name: "nginx-deployment"
+
 
 ```

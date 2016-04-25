@@ -16,7 +16,7 @@ deploy:
   kubernetes:
     cluster: https://107.978.211.57
     token: $$TOKEN
-    token:
+    image: squizr/drone-kubernetes
     deployment:
       kind: "Deployment"
       spec:
