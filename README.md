@@ -2,6 +2,8 @@
 
 Drone plugin to deploy or update a deployments on kubernetes. For the usage information and a listing of the available options please take a look at [the docs](DOCS.md).
 
+Please note this plugin uses [Deployments](http://kubernetes.io/docs/user-guide/deployments/) avaliable on kubernetes 1.2 and up.
+
 ## Binary
 
 Build the binary using `make`:
